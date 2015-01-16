@@ -1,0 +1,26 @@
+@import "susy";
+
+$susy: (
+  columns: 24,
+  gutters: 1/4
+);
+
+.l-fluid-container {
+  @include container();
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  };
+}
+
+.l-menu-bar {
+  @include span(25%);
+}
+.l-search-bar {
+  @include span(last 25%);
+}
+
+
+
+
